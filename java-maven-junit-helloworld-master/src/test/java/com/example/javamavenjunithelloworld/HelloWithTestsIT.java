@@ -2,6 +2,7 @@ package com.example.javamavenjunithelloworld;
 
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
 
 import static org.hamcrest.CoreMatchers.*;
@@ -23,6 +24,7 @@ public class HelloWithTestsIT {
     public final StandardOutputStreamLog out = new StandardOutputStreamLog();
 
     @Ignore
+    @Test
     public void doesItSayHelloTest() {
         String[] args = {"1"};
         HelloApp.main(args);
@@ -31,6 +33,7 @@ public class HelloWithTestsIT {
     }
 
     @Ignore
+    @Test
     public void doesItSayHelloTest3() {
         String[] args = {"3"};
         HelloApp.main(args);
