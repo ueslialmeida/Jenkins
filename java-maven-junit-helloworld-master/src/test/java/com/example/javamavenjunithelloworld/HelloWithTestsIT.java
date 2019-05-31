@@ -22,7 +22,7 @@ public class HelloWithTestsIT {
     @Rule
     public final StandardOutputStreamLog out = new StandardOutputStreamLog();
 
-    @Test
+    @Ignore
     public void doesItSayHelloTest() {
         String[] args = {"1"};
         HelloApp.main(args);
@@ -30,7 +30,7 @@ public class HelloWithTestsIT {
         assertThat(out.getLog(), is(equalTo(Hello.HELLO + "\n")));
     }
 
-    @Test
+    @Ignore
     public void doesItSayHelloTest3() {
         String[] args = {"3"};
         HelloApp.main(args);
